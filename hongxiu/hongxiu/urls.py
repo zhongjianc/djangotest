@@ -20,4 +20,5 @@ from hongxiu.views import *
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^hello/',hello),
+    url(r'^curr',current_datetime)
 ]
