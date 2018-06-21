@@ -16,10 +16,15 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from hongxiu.views import *
+from books.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^hello/',hello),
     url(r'^curr',current_datetime),
-    url(r'^time/plus/(\d{1,2})/$',hours_ahead)
+    url(r'^time/plus/(\d{1,2})/$',hours_ahead),
+    url(r'^books/index', index),
+    url(r'^books/test',test),
+    url(r'^books/search_form',search_form),
+    url(r'^books/search',search)
 ]
